@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.itzpulu.prime.MainActivity"
+    tools:ignore="Overdraw">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Message"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/Text"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Incorrect"
+        android:id="@+id/Incorrect"
+        android:layout_below="@id/Text"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="check_incorrectness" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Correct"
+        android:id="@+id/Correct"
+        android:onClick="check_Correctness"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Incorrect"
+        android:layout_marginTop="10dp" />
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Cheat"
+        android:id="@+id/Cheat"
+        android:layout_below="@+id/Correct"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="OnCheat"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Hint"
+        android:id="@+id/Hint"
+        android:layout_below="@+id/Cheat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="OnHint"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Pass"
+        android:id="@+id/pass"
+        android:onClick="ChangeText"
+        android:layout_below="@+id/Hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
